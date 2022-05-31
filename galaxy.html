@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <title>Galaxy</title>
+    <style>
+           ul {
+            list-style: none;
+        }
+        .k {
+            margin-left: -15px;
+            margin-top: -11px;
+        }
+        .i {
+            margin-top: -11px;
+        }
+        .ms- {
+            margin-left: 60px;
+        }
+        .fup {
+            font-size: 12.5px;
+            color: black;
+        }
+        .fup:hover {
+            color: white;
+        }
+        .nav {
+            position: relative;
+            top: 5px;
+            left: -15px;
+        }
+        .w-1 {
+            width: 110px;
+        }
+        .w-2 {
+            width: 100px;
+        }
+        .w-3 {
+            width: 135px;
+        }
+        .nall {
+            margin-top: -20px;
+            border: 1px solid lightgrey;
+            padding-left: 20px;
+            height: 100px;
+        }
+        .nal {
+            border: 1px solid lightgrey;
+            height: 52px;
+            border-top: 0px;
+            padding-left: 20px;
+           
+
+        }
+        .dropd:hover .dropc {
+            display: block;
+            z-index: 1;
+            
+        }
+        .dropdd:hover .dropcc {
+            display: block;
+            z-index: 1;
+        }
+        .dropc {
+            position: absolute;
+            left: -180px;
+            line-height: 52px;
+            display: none;
+            width: 1290px;
+            top: 65px;
+            background-color: white;
+            height: 700px;
+        }
+        .dropcc {
+            position: absolute;
+            left: 350px;
+            /* line-height: 52px; */
+            display: none;
+            /* width: 1000px; */
+            top: 35px;
+        }
+        .dropd {
+            position: relative;
+            
+        }
+        .drop-link {
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+        }
+        .l {
+            position: relative;
+            left:-450px;
+            top: -530px;
+        }
+        .b {
+            margin-left: 850px;
+            margin-top: -890px;
+        }
+        .loo {
+            font-size: 18px;
+            font-weight: 700;
+        }
+        .fro, .fup, .fwo {
+            font-weight: 600;
+        }
+        .fwo {
+            padding-left: 20px;
+            margin-top: -20px;
+            
+        }
+        .co {
+            font-size: 12.5px;
+            color: black;
+        }
+        .co:hover {
+            color: black;
+        }
+        .fwo:hover {
+            color: black;
+        }
+        .bg-overlay {
+            background-color: rgba(0, 0, 0, 0.6);
+           background-size: cover;
+           height: 100%;
+        }
+        .bg-image {
+            background-image: url(../sqi/nw-bg.jpg);
+            /* background-position: center; */
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 1000px;
+            margin-top: -8px;
+            margin-bottom: 30px
+        }
+        .eh {
+            font-size: 9.9px;
+            color: white;
+            line-height: 11px;
+            width: 415px;
+            margin-top: -6px;
+        }
+        .const {
+            position: sticky;
+            top: 0px;
+            /* z-index: 3; */
+            background-color: white;
+        }
+        .dropdown-item {
+            font-weight: 700;
+        }
+        .dropd-menu {
+            font-weight: 700;
+        }
+        .pm {
+            font-weight: 600;
+        }
+        td a {
+            color: black;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 15px;
+
+        }
+        table td{
+            border: 0.5px solid rgb(217,217,217);
+            border-collapse: collapse;
+            width: 350px;
+            padding-left: 22px;
+        }
+        table {
+            margin-right: -5px;
+           height: 100px;
+            
+        }
+        .core {
+            margin-top: -20px;
+
+        }
+        .lap {
+            font-size: 11px;
+            font-weight: 300;
+        }
+        .asap {
+            text-decoration: none;
+            color: black;
+            font-size: 11px;
+            font-weight: 300;
+        }
+        .asa {
+            text-decoration: none;
+            color: black;
+            font-size: 11px;
+            font-weight: 300;
+            width: 60px;
+        }
+        .cope {
+            margin-left: 300px;
+        }
+        .buy {
+            padding-left: 32px;
+            padding-right: 32px;
+            margin-top: 30px;
+            margin-left: 40px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body style="overflow-x: hidden;">
+    <nav class="navbar nall ">
+        <div>
+         <a  href="#" class="navbar-brand "><img width="72%" src="../sqi/sam-icon.png" alt=""></a>
+        </div>
+        <ul class="nav ">
+            <div class="row ">
+                <ul class="col d-flex " style="line-height: 2px;">
+                    <li class="nav-item dropd">
+                        <a href="" class="nav-link btn btn-outline-dark border-0 rounded-pill fup p-2 pt-1 pb-1 ">Mobile</a>
+                        <div class="dropc row" style="padding-left: 20px;">
+                            <ul class="col">
+                                <li class="drop-item ">
+                                    <a href="#" class=" fs-2 text-dark"><h3>Mobile</h3></a>
+                                </li>
+                                <li class="drop-item dropdd">
+                                    <a href="#" class="drop-link">Featured</a>
+                                    <div class="dropcc d-flex">
+                                        <span>></span>
+                                        <ul>
+                                            <li class="drop-item">
+                                                <a href="#" class="drop-link">
+                                                    <span>Galaxy S22 Ultra <button class="btn btn-primary rounded-pill p-0 ps-1 pe-1" style="font-size: 10px;">New</button></span>
+                                                </a>
+                                            </li>
+                                            <li class="drop-item">
+                                                <a href="#" class="drop-link">
+                                                    <span>Galaxy S22 <div style="border-right: 1.3px solid black; display: inline; margin-right: 3px;"></div> S22+<button class="btn btn-primary rounded-pill p-0 ps-1 pe-1" style="font-size: 10px;">New</button></span>
+                                                </a>
+                                            </li>
+                                            <li class="drop-item">
+                                                <a href="#" class="drop-link">
+                                                    <span>Galaxy Tab S8<div style="border-right: 1.3px solid black; display: inline; margin-right: 3px; margin-left: 2px;"></div>S8+<div style="border-right: 1.3px solid black; display: inline; margin-right: 3px;"></div> S8 Ultra<button class="btn btn-primary rounded-pill p-0 ps-1 pe-1" style="font-size: 10px;">New</button></span>
+                                                </a>
+                                            </li>
+                                            <li class="drop-item">
+                                                <a href="#" class="drop-link">
+                                                    <span>Galaxy A53 5G <button class="btn btn-primary rounded-pill p-0 ps-1 pe-1" style="font-size: 10px;">New</button></span>
+                                                </a>
+                                            </li>
+                                            <li class="drop-item">
+                                                <a href="#" class="drop-link">
+                                                    <span>Galaxy Books Pro 360 <button class="btn btn-primary rounded-pill p-0 ps-1 pe-1" style="font-size: 10px;">New</button></span>
+                                                </a>
+                                            </li>
+                                            <li class="drop-item">
+                                                <a href="#" class="drop-link">
+                                                    <span>Galaxy Bespoke</span>
+                                                </a>
+                                            </li>
+                                            <li class="drop-item">
+                                                <a href="#" class="drop-link">
+                                                    <span>Galaxy Z Flip3 5G</span>
+                                                </a>
+                                            </li>
+                                            <li class="drop-item">
+                                                <a href="#" class="drop-link">
+                                                    <span>Galaxy Z Fold3 5G</span>
+                                                </a>
+                                            </li>
+                                            <li class="drop-item">
+                                                <a href="#" class="drop-link">
+                                                    <span>Galaxy S21 FE <div style="border-right: 1.3px solid black; display: inline; margin-right: 3px;"></div> S22<div style="border-right: 1.3px solid black; display: inline; margin-right: 3px;"></div> S22+ 5G</span>
+                                                </a>
+                                            </li>
+                                            <li class="drop-item">
+                                                <a href="#" class="drop-link">
+                                                    <span>Galaxy Watch4</span>
+                                                </a>
+                                            </li>
+                                            <li class="drop-item">
+                                                <a href="#" class="drop-link">
+                                                    <span>Galaxy Watch4 Classic</span>
+                                                </a>
+                                            </li>
+                                            <li class="drop-item">
+                                                <a href="#" class="drop-link">
+                                                    <span>Galaxy Buds2</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="drop-item">
+                                <a href="#" class="drop-link">Smartphones</a>
+                                </li>
+                                <li class="drop-item">
+                                    <a href="#" class="drop-link">Tablets</a>
+                                </li>
+                                <li class="drop-item">
+                                    <a href="#" class="drop-link">Galaxy Book</a>
+                                </li>
+                                <li class="drop-item">
+                                    <a href="#" class="drop-link">  Watches</a>
+                                </li>
+                                <li class="drop-item">
+                                    <a href="#" class="drop-link">Galaxy Buds</a>
+                                </li>
+                                <li class="drop-item">
+                                    <a href="#" class="drop-link">Accessories</a>
+                                </li>
+                                <li class="drop-item">
+                                    <a href="#" class="drop-link">One UI</a>
+                                </li>
+                                <li class="drop-item">
+                                    <a href="#" class="drop-link">Galaxy Gifts</a>
+                                </li>
+                                <li class="drop-item">
+                                    <a href="#" class="drop-link">Why Galaxy</a>
+                                </li>
+                            </ul>
+                            <div class="col l">
+                                <div class="var" style="border-right: 1px solid lightgrey; height: 65vh;"></div>
+                            </div>
+                            <div class="col b">
+                                <img  class="rounded" src="../sqi/sam-image.webp" alt="">
+                                <p class=" fs-6" >Galaxy S22 Ultra</p>
+                                <a href="#" class="text-dark fw-bold  p">Buy now</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link  btn btn-outline-dark border-0 rounded-pill p-2 pt-1 pb-1  fup m">TV&AV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link w-3 btn btn-outline-dark border-0 rounded-pill  pt-1 pb-1 fup">Home Appliances</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link btn btn-outline-dark border-0 rounded-pill p-2 pt-1 pb-1 fup">Computing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link btn btn-outline-dark border-0 rounded-pill p-2 pt-1 pb-1 fup">Displays</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link w-2 btn btn-outline-dark border-0 rounded-pill p-1 pt-1 pb-1 fup">Smart Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link btn btn-outline-dark border-0 rounded-pill ms-2 p-2 pt-1 pb-1   fup">Offer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link btn btn-outline-dark border-0 rounded-pill p-2 pt-1 pb-1 fup">#YouMake</a>
+                    </li>
+                </ul>
+                <ul class="col d-flex ms-">
+                    <li class="nav-item">
+                        <a href="" class="nav-link btn btn-outline-dark border-0 rounded-pill p-2 pt-1 pb-1 fup">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link btn btn-outline-dark border-0 rounded-pill p-2 pt-1 pb-1 fup">Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link w-1 btn btn-outline-dark border-0 rounded-pill p-1 pt-1 pb-1 fup">For Business</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link i "><img width="27px" src="../sqi/search-sam.png" alt=""></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link k"><img width="23px" src="../sqi/basket-sam.png" alt=""></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link k"><img width="23px" src="../sqi/me-sam.png" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </ul>
+       
+    </nav> 
+   <div class="const">
+        <nav class="navbar nal  ">
+            <div class="dropdown-toggle " data-bs-toggle="dropdown">
+                <a href="#" class="navbar-brand loo text-dark"> Galaxy S22  Ultral</a>
+            </div>
+            <div class="dropdown-menu fw-bold text-dark border-0" style="box-shadow: 0 0 7px rgba(225, 225, 225, 0.8); margin-top: -2px; margin-left: 17px;  border-radius: 10px; font-size: 14px;padding-left: 10px; padding-right: 20px; line-height: 27px;">
+                <a href="#" class="dropdown-item">Galaxy S22 Ultra <img width="14px" src="../sqi/sam-mark.png" alt="" style="margin-left: 75px;"></a>
+                <a href="#" class="dropdown-item"> Galaxy S22 | S22+</a>
+                <a href="#" class="dropdown-item">Galaxy Tab S8 | S8+ | S8 Ultra</a>
+                <a href="#" class="dropdown-item">Galaxy Watch4</a>
+                <a href="#" class="dropdown-item"> Galaxy Buds Pro</a>
+                <a href="#" class="dropdown-item">  See all Galaxy S Series</a>        
+            </div>
+            <div>
+                <span class="text-dark fro">From £19.47/mo for 48 months or £934.41*</span>
+            </div>
+        </nav>
+        <nav class="navbar" >
+            <ul class="navbar nav fwo ">
+                <li class="nav-item">
+                    <a href="#" class="nav-link co">Highlights </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link ms-2 co">Showroom</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link ms-2 co">Models</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link ms-2 co">Accessories</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link ms-2 co">My S22 Ultra</a>
+                </li>
+            </ul>
+        </nav>
+        <hr style="border: 1px solid lightgrey ; margin-top: -8px;">
+   </div>
+    <section class="" style="height: 1900px; background-color: black; margin-top: -17px;">
+        <main class="bg-image">
+            <div class="bg-overlay">
+                <div class="text-center " style="line-height: 18px; font-family: Arial, Helvetica, sans-serif; padding-top: 40px;">
+                    <p class="text-primary ">NEW</p>
+                    <p class=" text-white fw-bold " style="font-size: 37px;">Galaxy S22 Series</p>
+                    <p class="text-white fs-6">From £19.47/mo for 48 months or £934.41</p>
+                    <div class="eh mx-auto">
+                        Representative example without 0% or 9.9% offers: Representative 18.9% APR (variable).
+                        Purchase interest rate 18.9% p.a. (variable). Assumed credit limit £1,200. Please note that late
+                        or missed payments may have serious consequences for your credit records and make it
+                        harder or more expensive to borrow in future.
+                    </div>
+                </div>
+                <main class="d-flex" style=" border-top-left-radius: 20px; border-top-right-radius: 20px; background-color: rgba(0, 0, 0, 0.8); margin-left: 20px; margin-right: 20px;border: 1px solid rgb(54,54,54);height: 800px; margin-top: 70px; border-bottom: 0;">
+                    <div class="left w-50">
+                        <p class="ms-5 ps-2 mt-5 pt-1" style="font-size: 18px;">
+                            <span class="text-light  fw-bold">Galaxy S22</span>
+                            <span class="text-light ">|</span>
+                            <span class="text-light fw-bold">Galaxy S22+</span>
+                            <span class="text-light">|</span>
+                            <span class="fw-bold" style="color: rgb(70,70,70);">Galaxy S22 Ultra</span>
+                        </p>
+                        <p class="ms-5 ps-2 pt-2">
+                            <span class="text-light fs-4 fw-bold">Galaxy S22 Ultra</span>
+                            <span class="text-light ms-2">|</span>
+                            <span class="text-light ms-1" style="font-size: 18px;">Phantom Black</span>
+                        </p>
+                        <div class="ps-2 ms-5" style="font-size: 12.5px;">
+                            <a href="#" class="text-decoration-none text-light fw-bold">
+                                <img width="18px" src="../sqi/gall.svg" alt="">
+                                <span class="ms-2">View gallery</span>
+                            </a>
+                            <a href="#" class="text-decoration-none  fw-bold" style="color: rgb(129,127,128); margin-left: 130px;">
+                                <img width="12px" src="../sqi/hand.svg" alt="">
+                                <span class="ms-2">view in hand</span>
+                            </a>
+                            <a href="#" class="text-decoration-none text-light  fw-bold " style="margin-left: 130px;">
+                                <img width="18px" src="../sqi/comp.svg" alt="">
+                                <span class="ms-2">compare</span>
+                            </a>
+                        </div>
+                        <div class="mt-5 ms-5 ps-3" style="box-shadow: 70, 70, 100px black;">
+                            <video src="../sqi/video-gal.webm"   autoplay="autoplay" muted="muted"  ></video>
+                        </div>
+                        <div class="ms-5 ps-3 d-flex    " style="font-size: 12.5px; margin-top: 70px;">
+                            <a href="#" class="text-decoration-none text-light ">
+                                <img style="margin-left: 35px;" width="17px" src="../sqi/ico-finance.svg" alt="">
+                                <p class="mt-1">Finance Available</p>
+                            </a>
+                            <a href="#" class="text-decoration-none text-light ms-5 ps-4 ">
+                                <img class=" ms-3" width="25px" src="../sqi/delivery.svg" alt="">
+                                <p class="mt-1">Free Delivery</p>
+                            </a>
+                            <a href="#" class="text-decoration-none text-light ms-5 ps-4 ">
+                                <img class=" ms-3" width="19px" src="../sqi/returns.svg" alt="">
+                                <p class="mt-1">Free Returns</p>
+                            </a>
+                            <a href="#" class="text-decoration-none text-light  ms-5 ps-4">
+                                <img class=" ms-4" width="17px" src="../sqi/price.svg" alt="">
+                                <p>Price Promise</p>
+                            </a>
+                        </div>
+                        <hr class=" bg-light" style="margin-left: 65px; margin-right: 15px;">
+                        <div class="ms-5 ps-4 mt-4 pt-2">
+                            <img width="32px" src="../sqi/tele.png" alt="">
+                            <span class="text-light ms-2" style="font-size: 12px;">Need help?  <a href="#" class="text-decoration-none text-primary">Ask us anything about Galaxy S22 Ultra ></a></span>
+                        </div>
+                    </div>
+                    <div class="right w-50 ps-5 pt-5 mt-1">
+                        <p class="text-light small fw-bold">Choose your storage</p>
+                        <div class="pt-2 d-flex">
+                            <button class="bt1"  style="background-color: transparent; border-radius: 10px; border: 2px solid rgb(33,137,255); padding-top: 7px; padding-bottom: 2px; padding-left: 13px; padding-right: 13px;" >
+                                <p class="  text-light" style="font-size: 16px; font-weight: 400;">128GB</p>
+                                <p style="margin-top: -20px; font-size: 13.4px; margin-bottom: 8px; font-weight: 300;" class="text-light">£1,149.00</p>
+                            </button>
+                            <button class="ms-2 bt2"  style="background-color: transparent; border-radius: 10px; border: 2px solid rgb(102,102,102); padding-top: 7px; padding-bottom: 2px; padding-left: 13px; padding-right: 13px;" >
+                                <p class="  text-light" style="font-size: 16px; font-weight: 400;">256GB</p>
+                                <p style="margin-top: -20px; font-size: 13.4px; margin-bottom: 8px; font-weight: 300;" class="text-light">£1,249.00</p>
+                            </button>
+                            <button class="ms-2 bt3" style="background-color: transparent; border-radius: 10px; border: 2px solid rgb(102,102,102); padding-top: 7px; padding-bottom: 2px; padding-left: 13px; padding-right: 13px;" >
+                                <p class="  text-light" style="font-size: 16px; font-weight: 400;">512GB</p>
+                                <p style="margin-top: -20px; font-size: 13.4px; margin-bottom: 8px; font-weight: 300;" class="text-light">£1,329.00</p>
+                            </button>
+                           <div>
+                                <button class="ms-2 bt4"  style="background-color: transparent; border-radius: 10px; border: 2px solid rgb(102,102,102); padding-top: 7px; padding-bottom: 2px; padding-left: 13px; padding-right: 13px;" >
+                                    <p class="  text-light" style="font-size: 16px; font-weight: 400;">1TB</p>
+                                    <p style="margin-top: -20px; font-size: 13.4px; margin-bottom: 8px; font-weight: 300;" class="text-light">£1,449.00</p>
+                                </button>
+                                
+                           </div>
+                            <span class="ms-3" style="width: 150px; color: rgb(82,162,255);">
+                                <h3>£1,149.00</h3>
+                                
+                            </span>
+                           
+                        </div>
+                       <div style="margin-left: 280px; display: flex;">
+                            <p class="mt-2" style="font-size: 9px; color: rgb(255,153,34);">SAMSUNG ONLY</p>
+                            <div style=" width: 160px;">
+                                <p class="text-light ms-4" style="font-size: 12px; font-weight: 600;  ">From £29.09/mo for 48 months or £1,396.15*</p>
+
+                            </div>
+                        </div>
+                       <div class="core">
+                            <span class="text-light small fw-bold">Choose your colour</span>
+                            <span style="font-size: 11px; color: rgb(170,170,170); margin-left: 90px;">Online exclusive colours</span>
+                            <button class="btn btn-primary rounded-pill buy">Buy Now</button>
+                       </div>
+                       <div style=" margin-top: 7px;" >
+                        <div style="border: 2px solid blue; display: inline; padding-left: 5px; padding-top: 5px; padding-bottom: 5px; border-radius: 80px;">
+                           <span class="hove" style="background-color: rgb(66,66,66); color:rgb(66,66,66); border-radius: 100%;  padding: 1px;">he</span>
+                        </div>
+                           <span class="hove ms-3" style="background-color: rgb(133,114,122); color:rgb(133,114,122); border-radius: 100%;  padding: 2px;">hes</span>
+                           <span class="hove ms-3" style="background-color: rgb(237,237,235); color:rgb(237,237,235); border-radius: 100%;  padding: 2px;">hes</span>
+                           <span class="hove ms-3" style="background-color: rgb(118,144,142); color:rgb(118,144,142); border-radius: 100%;  padding: 2px;">hes</span>
+                           <div style="border-right: 1px solid lightgrey; margin: 20px; display: inline;"></div>
+                           <span class="hove" style="background-color: rgb(138,140,143); color:rgb(138,140,143); border-radius: 100%;  padding: 2px;">hes</span>
+                           <span class="hove ms-3" style="background-color: rgb(198,211,231); color:rgb(198,211,231); border-radius: 100%;  padding: 2px;">hes</span>
+                           <span class="hove ms-3" style="background-color: rgb(214,122,118); color:rgb(214,122,118); border-radius: 100%;  padding: 2px;">hes</span>
+                           
+                       </div>
+                     <div class="mt-3" >
+                        <span class="text-light fw-bold " style="font-size: 12px; ">Phantom Black</span>
+                        <div class="d-flex mt-3">
+                            <img width="35px" height="35px" src="../sqi/snip.png" alt="">
+                           <div class="text-light ms-3">
+                             <p style="font-size: 11.5px;">Online exclusive colours require special production.</p>
+                             <p style="font-size: 11.5px; margin-top: -20px;">Please allow 4 weeks for delivery.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div style="border-bottom: 0.3px solid rgb(43,39,40); margin-top: 40px; width: 90%;"></div>
+                        <main style="margin-top: 30px;">
+                            <span class="text-light fw-bold  " style="font-size: 12px; ">Your offers</span>
+                            <div class="d-flex mt-3">
+                            <div class="d-flex">
+                                    <div style="width: 100px; height: 80px; border-bottom-left-radius: 12px; border-top-left-radius: 12px;" class="bg-light text-center pt-4"> <img width="60%" src="../sqi/DisneyPlus.svg" alt=""></div style="width: 100px; height: 70px;">
+                                        <div style="background-color: rgb(26,26,26); width: 150px; font-size: 11px; padding-top: 7px; padding-left: 10px; height: 80px; border-bottom-right-radius: 12px; border-top-right-radius: 12px;">
+                                            <p class="text-light fw-bold">Enjoy 12 months of Disney+ on us</p>
+                                            <p style="font-size: 10px;  color: rgb(70, 66, 66); padding-top: 2px;">Claim after purchase</p>
+                                        </div>
+                                </div>
+                            <div class="d-flex">
+                                    <div style="width: 100px; height: 80px; border-bottom-left-radius: 12px; border-top-left-radius: 12px;" class="bg-light text-center pt-4 ms-3"> <img width="40%" src="../sqi/offer-arr.svg" alt=""></div style="width: 100px; height: 70px;">
+                                        <div style="background-color: rgb(26,26,26); width: 150px; font-size: 11px; padding-top: 7px; padding-left: 10px; height: 80px; border-bottom-right-radius: 12px; border-top-right-radius: 12px;">
+                                            <p class="text-light fw-bold">Trade in for an instant discount of up to £450**</p>
+                                            <p style="font-size: 10px;  color: rgb(71, 65, 65); padding-top: 2px;">Add before checkout</p>
+                                        </div>
+                                </div>
+                            
+                            </div>
+                        </main>
+                        <div style="border-bottom: 0.3px solid rgb(43,39,40); margin-top: 50px; width: 90%; margin-bottom: 20px;"></div>
+
+                        <span class="text-light fw-bold ps-1  " style="font-size: 13px; ">Flexible payment 0ption</span>
+                        <div class="row rounded-3 p-4 ps-2 ms-1 mt-3 fw-bold" style="background-color: rgb(13,13,13); width: 94%;" >
+                            <div class="col text-light" style="font-size: 13px;">One-time payment</div>
+                            <div class="col text-primary fs-5">
+                                £1,149.00</div>
+                        </div>
+                        <div class="row rounded-3 p-4 ps-2 ms-1 mt-4 fw-bold" style="background-color: rgb(26,26,26); width: 94%;" >
+                            <div class="col text-light" style="font-size: 13px;">Trade in for an instant discount</div>
+                            <div class="col d-flex">
+                                <span class="text-primary fs-5">£699.00</span>
+                                <span class=" col text-light ms-4" style= "font-size: 13px;">
+                                    <div class="row">Save up to</div>
+                                    <div class="row">£450.00</div>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row rounded-3 p-4 ps-2 ms-1 mt-4 fw-bold" style="background-color: rgb(26,26,26); width: 94%;" >
+                            <div class="col text-light" style="font-size: 13px;">Finance options</div>
+                            <div class="col text-primary fs-5">
+                                £29.09 <span class="text-light" style="font-size: 11px;">/mo for 48 months</span></div>
+                        </div>
+                        <div class="row rounded-3 p-4 ps-2 ms-1 mt-4 fw-bold" style="background-color: rgb(26,26,26); width: 94%;" >
+                            <div class="col text-light" style="font-size: 13px;">Samsung Upgrade Programme</div>
+                            <div class="col text-primary fs-5">
+                                £114.90 <span class="text-light" style="font-size: 11px;">Due Today</span></div>
+                        </div>
+                        <div class="row rounded-3 p-4 ps-2 ms-1 mt-4 fw-bold" style="background-color: rgb(26,26,26); width: 94%;" >
+                            <div class="col text-light pt-2" style="font-size: 13px;">Pay monthly phone contracts</div>
+                            <div class="col d-flex text-primary fs-5">
+                                <div >
+                                    <a href="#"><img width="70%" src="../sqi/v-s.png" alt=""></a>
+                                </div>
+                                <div class="mt-1" style="margin-left: -15px;">
+                                    <a href="#"><img width="60%" src="../sqi/02-s.png " alt=""></a>
+                                </div>
+                                <div class="mt-1">
+                                    <a href="#"><img width="60%" src="../sqi/3-s.png " alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <main class="text-center" style="margin-top: 400px;">
+                    <h1 class="text-light">The epic standard in innovation</h1>
+                    <main class="row m-4  mt-5  pt-4">
+                        <div class="col-sm fw-bold" style="text-align: left;">
+                            <div style="background-color: rgb(28,28,28); padding-top: 15px; border-radius: 12px;">
+                                <img  width="275px" src="../sqi/nit.webp" alt="">
+                            </div>
+                            <p class="text-light pt-2" style="font-size: 12px;">Nitrography</p>
+                        </div>
+                        <div class="col-sm fw-bold" style="text-align: left;">
+                            <div style="background-color: rgb(28,28,28); padding-top: 5px; border-radius: 12px;">
+                                <img src="../sqi/4nm.webp" alt="">
+                            </div>
+                            <p class="text-light pt-2" style="font-size: 12px;">4nm Processor</p>
+                        </div>
+                        <div class="col-sm fw-bold" style="text-align: left;">
+                            <div style="background-color: rgb(28,28,28); padding-bottom: 10px; border-radius: 12px;">
+                                <img src="../sqi/spen.webp" alt="">
+                            </div>
+                            <p class="text-light pt-2" style="font-size: 12px;">Embedded S Pen</p>
+                        </div>
+                        <div class="col-sm fw-bold" style="text-align: left;">
+                           <div style="background-color: rgb(28,28,28); padding-top: 3px;  border-radius: 12px;">
+                            <img src="../sqi/2x.webp" alt="">
+                           </div>
+                           <p class="text-light pt-2" style="font-size: 12px;">AMOLED 2x Display</p>
+                        </div>
+
+                    </main>
+                </main>
+            </div>
+        </main>
+    </section>
+
+
+    <section style="background-color: rgb(244,244,244); height: 680px; padding-top: 80px;">
+        <main class="text-center" >
+            <p style="font-weight: 600; font-size: 34px; font-family: Arial, Helvetica, sans-serif;">Compare your phone with the Galaxy S22 Ultra</p>
+            <div class="d-flex" style="padding-top: 40px; margin-left: 380px; ">
+                <div class="dropd-menu" style=" height: 80px; font-size: 15px;">
+                   <div>
+                        <select name="" id="" style=" background-color: rgb(244,244,244); width: 200px; font-weight: 700; border: none;  border-bottom: 1px solid black; margin-left: 15px;">
+                            <option value="Select  your phone" >Select  your phone</option>
+                        
+                    
+                            <option value="Galaxy S9">Galaxy S9</option>
+                    
+                    
+                            <option value="Galaxy S9+">Galaxy S9+</option>
+                    
+                    
+                            <option value="Galaxy S10">Galaxy S10</option>
+                    
+                    
+                            <option value="Galaxy S10+ 5G">Galaxy S10+ 5G</option>
+                    
+                    
+                            <option value="Galaxy S20 FE">Galaxy S20 FE</option>
+                    
+                    
+                            <option value="Galaxy S20">Galaxy S20</option>
+                    
+                    
+                            <option value="Galaxy S20+">Galaxy S20+</option>
+                    
+                    
+                            <option value="Galaxy S20 Ultra">Galaxy S20 Ultra</option>
+                    
+                    
+                            <option value="Galaxy Note9">Galaxy Note9</option>
+                    
+                    
+                            <option value="Galaxy Note10">Galaxy Note10</option>
+                    
+                    
+                            <option value="Galaxy Note10+">Galaxy Note10+</option>
+                    
+                    
+                            <option value="Galaxy Note10+ 5G">Galaxy Note10+ 5G</option>
+                    
+                    
+                            <option value="Galaxy Note20">Galaxy Note20</option>
+                    
+                    
+                            <option value="Galaxy Note20 Ultra">Galaxy Note20 Ultra</option>
+                    
+                    
+                            <option value="Galaxy Z Flip 5G">Galaxy Z Flip 5G</option>
+                    
+                    
+                            <option value="Galaxy Z Fold2 5G">Galaxy Z Fold2 5G</option>
+                    
+                    
+                            <option value="Huawei P40 Pro+">Huawei P40 Pro+</option>
+                    
+                    
+                            <option value="Huawei P40 Pro">Huawei P40 Pro</option>
+                    
+                    
+                            <option value="Huawei P40 lite 5G">Huawei P40 lite 5G</option>
+                    
+                    
+                            <option value="Huawei P30 Pro">Huawei P30 Pro</option>
+                    
+                    
+                            <option value="Huawei Mate20 Pro">Huawei Mate20 Pro</option>
+                    
+                    
+                            <option value="iPhone 12">iPhone 12</option>
+                    
+                    
+                            <option value="iPhone 12 pro">iPhone 12 pro</option>
+                    
+                    
+                            <option value="iPhone 12 pro max">iPhone 12 pro max</option>
+                    
+                    
+                            <option value="iPhone 13">iPhone 13</option>
+                    
+                    
+                            <option value="Galaxy S21">Galaxy S21</option>
+                    
+                    
+                            <option value="Galaxy S21+">Galaxy S21+</option>
+                    
+                    
+                            <option value="Galaxy S21 FE">Galaxy S21 FE</option>
+                    
+                    
+                            <option value="Galaxy S22">Galaxy S22</option>
+                    
+                    
+                            <option value="Galaxy S22+">Galaxy S22+</option>
+                    
+                    
+                            <option value="Galaxy S22 Ultra">Galaxy S22 Ultra</option>
+                    
+                    
+                            <option value="Galaxy S21 FEGalaxy Z Fold 5G">Galaxy Z Fold 5G</option>
+                        </select>
+                   </div>
+                   
+                   
+                   <div class="mt-5 "> <img width="100px" src="../sqi/dotted-img.webp" alt=""></div>
+                    
+                </div>
+               
+                <div class="dropd-menu" style=" height: 80px; font-size: 15px; margin-left: 25px;">
+                    <select name="" id="" style=" background-color: rgb(244,244,244); width: 200px; font-weight: 700; border: none; border-bottom: 1px solid black; ">
+                        <option value="Galaxy S22">Galaxy S22</option>
+                    
+                   
+                        <option value="Galaxy S9">Galaxy S9</option>
+                   
+                   
+                        <option value="Galaxy S9+">Galaxy S9+</option>
+                   
+                   
+                        <option value="Galaxy S10">Galaxy S10</option>
+                   
+                   
+                        <option value="Galaxy S10+ 5G">Galaxy S10+ 5G</option>
+                   
+                   
+                        <option value="Galaxy S20 FE">Galaxy S20 FE</option>
+                   
+                   
+                        <option value="Galaxy S20">Galaxy S20</option>
+                   
+                   
+                        <option value="Galaxy S20+">Galaxy S20+</option>
+                   
+                   
+                        <option value="Galaxy S20 Ultra">Galaxy S20 Ultra</option>
+                   
+                   
+                        <option value="Galaxy Note9">Galaxy Note9</option>
+                   
+                   
+                        <option value="Galaxy Note10">Galaxy Note10</option>
+                   
+                   
+                        <option value="Galaxy Note10+">Galaxy Note10+</option>
+                   
+                   
+                        <option value="Galaxy Note10+ 5G">Galaxy Note10+ 5G</option>
+                   
+                   
+                        <option value="Galaxy Note20">Galaxy Note20</option>
+                   
+                   
+                        <option value="Galaxy Note20 Ultra">Galaxy Note20 Ultra</option>
+                   
+                   
+                        <option value="Galaxy Z Flip 5G">Galaxy Z Flip 5G</option>
+                   
+                   
+                        <option value="Galaxy Z Fold2 5G">Galaxy Z Fold2 5G</option>
+                   
+                   
+                        <option value="Huawei P40 Pro+">Huawei P40 Pro+</option>
+                   
+                   
+                        <option value="Huawei P40 Pro">Huawei P40 Pro</option>
+                   
+                   
+                        <option value="Huawei P40 lite 5G">Huawei P40 lite 5G</option>
+                   
+                   
+                        <option value="Huawei P30 Pro">Huawei P30 Pro</option>
+                   
+                   
+                        <option value="Huawei Mate20 Pro">Huawei Mate20 Pro</option>
+                   
+                   
+                        <option value="iPhone 12">iPhone 12</option>
+                   
+                   
+                        <option value="iPhone 12 pro">iPhone 12 pro</option>
+                   
+                   
+                        <option value="iPhone 12 pro max">iPhone 12 pro max</option>
+                   
+                   
+                        <option value="iPhone 13">iPhone 13</option>
+                   
+                   
+                        <option value="Galaxy S21">Galaxy S21</option>
+                   
+                   
+                        <option value="Galaxy S21+">Galaxy S21+</option>
+                   
+                   
+                        <option value="Galaxy S21 FE">Galaxy S21 FE</option>
+                   
+                   
+                        <option value="Galaxy S22">Galaxy S22</option>
+                   
+                   
+                        <option value="Galaxy S22+">Galaxy S22+</option>
+                   
+                   
+                        <option value="Galaxy S22 Ultra">Galaxy S22 Ultra</option>
+                   
+                   
+                        <option value="Galaxy S21 FEGalaxy Z Fold 5G">Galaxy Z Fold 5G</option>
+                    </select>
+                    <div class="mt-5 ms-1" > <img width="230px" src="../sqi/s22.webp" alt=""></div>
+                    <p class="fw-bold fs-5 mt-3 ms-1">Galaxy S22</p>
+                    <p class=" mt-5  text-center ms-1" style="font-weight: 400; font-size: 13px; ">From £19.47/mo for 48</p>
+                    <p class="  text-center ms-1" style="font-weight: 400; font-size: 13px;  margin-top: -16px;">  months or £934.41*</p>
+    
+                    
+    
+                </div>
+                <div class="dropd-menu" style=" height: 80px; font-size: 15px; margin-left: 20px; ">
+                    <select name="" id="" style=" background-color: rgb(244,244,244); width: 200px; font-weight: 700; border: none; border-bottom: 1px solid black; " >
+                        <option value="Galaxy S22 Ultra">Galaxy S22 Ultra</option>
+                    
+                   
+                        <option value="Galaxy S9">Galaxy S9</option>
+                   
+                   
+                        <option value="Galaxy S9+">Galaxy S9+</option>
+                   
+                   
+                        <option value="Galaxy S10">Galaxy S10</option>
+                   
+                   
+                        <option value="Galaxy S10+ 5G">Galaxy S10+ 5G</option>
+                   
+                   
+                        <option value="Galaxy S20 FE">Galaxy S20 FE</option>
+                   
+                   
+                        <option value="Galaxy S20">Galaxy S20</option>
+                   
+                   
+                        <option value="Galaxy S20+">Galaxy S20+</option>
+                   
+                   
+                        <option value="Galaxy S20 Ultra">Galaxy S20 Ultra</option>
+                   
+                   
+                        <option value="Galaxy Note9">Galaxy Note9</option>
+                   
+                   
+                        <option value="Galaxy Note10">Galaxy Note10</option>
+                   
+                   
+                        <option value="Galaxy Note10+">Galaxy Note10+</option>
+                   
+                   
+                        <option value="Galaxy Note10+ 5G">Galaxy Note10+ 5G</option>
+                   
+                   
+                        <option value="Galaxy Note20">Galaxy Note20</option>
+                   
+                   
+                        <option value="Galaxy Note20 Ultra">Galaxy Note20 Ultra</option>
+                   
+                   
+                        <option value="Galaxy Z Flip 5G">Galaxy Z Flip 5G</option>
+                   
+                   
+                        <option value="Galaxy Z Fold2 5G">Galaxy Z Fold2 5G</option>
+                   
+                   
+                        <option value="Huawei P40 Pro+">Huawei P40 Pro+</option>
+                   
+                   
+                        <option value="Huawei P40 Pro">Huawei P40 Pro</option>
+                   
+                   
+                        <option value="Huawei P40 lite 5G">Huawei P40 lite 5G</option>
+                   
+                   
+                        <option value="Huawei P30 Pro">Huawei P30 Pro</option>
+                   
+                   
+                        <option value="Huawei Mate20 Pro">Huawei Mate20 Pro</option>
+                   
+                   
+                        <option value="iPhone 12">iPhone 12</option>
+                   
+                   
+                        <option value="iPhone 12 pro">iPhone 12 pro</option>
+                   
+                   
+                        <option value="iPhone 12 pro max">iPhone 12 pro max</option>
+                   
+                   
+                        <option value="iPhone 13">iPhone 13</option>
+                   
+                   
+                        <option value="Galaxy S21">Galaxy S21</option>
+                   
+                   
+                        <option value="Galaxy S21+">Galaxy S21+</option>
+                   
+                   
+                        <option value="Galaxy S21 FE">Galaxy S21 FE</option>
+                   
+                   
+                        <option value="Galaxy S22">Galaxy S22</option>
+                   
+                   
+                        <option value="Galaxy S22+">Galaxy S22+</option>
+                   
+                   
+                        <option value="Galaxy S22 Ultra">Galaxy S22 Ultra</option>
+                   
+                   
+                        <option value="Galaxy S21 FEGalaxy Z Fold 5G">Galaxy Z Fold 5G</option>
+                    </select>
+                    <div class="mt-5 ms-1"> <img width="230px" src="../sqi/ultra.webp" alt=""></div>
+                    <p class="fw-bold fs-5 mt-3 ms-1">Galaxy S22 Ultra</p>
+                    <p class=" mt-5  text-center ms-1" style="font-weight: 400; font-size: 13px;">From £29.09/mo for 48 </p>
+                    <p class="  text-center ms-1" style="font-weight: 400; font-size: 13px; margin-top: -16px;">  months or £1,396.15*</p>
+                </div> 
+            </div>
+        </main>
+    </section>
+  
+
+    <section style="background-color: rgb(244,244,244);">
+        <main style="width: 77%; background-color: rgb(244,244,244); margin: auto; height: 500px;  ">
+          <div class="row">
+              <div class="col-7 fs-5 fw-bold">Rear Camera</div>
+              <div class="col-3 text-">
+                  <div class="row mt-2 small pm">12 MP (UW)</div>
+                  <div class="row mt-2 small pm">50 MP (W)</div>
+                  <div class="row mt-2 small pm">10 MP (T)</div>
+              </div>
+              <div class="col-2 text-">
+                    <div class="row mt-2 small pm">12 MP (UW)</div>
+                    <div class="row mt-2 small pm">108 MP (W)</div>
+                    <div class="row mt-2 small pm">10 MP (T)</div>
+              </div>
+          </div>  
+          <hr class="mt-4">
+          <div class="row mt-4">
+              <div class="col-7 fs-5 fw-bold ">Screen Size</div>
+              <div class="col-3 small pm">6.1“</div>
+              <div class="col-2 small pm">6.8“</div>
+          </div>
+          <hr class="mt-4">
+          <div class="row mt-4">
+                <div class="col-7 fs-5 fw-bold ">Battery size</div>
+                <div class="col-3 small pm">3,700mAh(typical)****</div>
+                <div class="col-2 small pm">5,000mAh(typical)****</div>
+         </div>
+         <hr class="mt-4" >
+         <div class="row mt-4">
+                <div class="col-7 fs-5 fw-bold ">S Pen</div>
+                <div class="col-3 small pm">No</div>
+                <div class="col-2 small pm">Yes</div>
+           </div>
+        </main>
+    </section>
+
+    <div class=" pt-5 mt-5">
+        <div class=" pt-5 ps-4">
+            <img src="../sqi/life.webp" alt="">
+            <div  style="margin-top: -230px; margin-left: 70px; z-index: 1;">
+                <h2 class="text-white fw-bold" style="font-family: Arial, Helvetica, sans-serif; font-size: 28;">Life opens up with Galaxy</h2>
+                <p class="text-white small mt-3"> Make the switch and leave limitations behind.</p>
+                <button class="btn btn-outline-light mt-2 ps-4 pe-4 rounded-pill" style="font-size: 12px;">Learn More</button>
+            </div>
+        </div>
+    </div>
+
+    <div style="padding: 20px; background-color:rgb(244,244,244) ; margin-top: 250px; font-size: 11.7px; font-weight: 400;">
+        <p class="pb-2">
+            * Representative example without 0% or 9.9% offers: Representative 18.9% APR (variable). Purchase interest rate 18.9% p.a. (variable). Assumed credit limit £1,200. Please note that late or missed payments may have serious consequences for your credit records and make it harder or more expensive to borrow in future.
+        </p>
+        <p class="pb-2">
+            ** Purchase from Samsung Shop Online by 29/04/22. £450 value based on Galaxy S21 Ultra 5G 128GB. Value dependent on model and condition. Charges apply if you do not send us your trade-in device. <a href="#">T&Cs apply.</a>
+        </p>
+        <p class="pb-2">
+            *** Purchase a qualifying product from Samsung Shop Online and claim the price difference within seven days of purchase, payment will be made via BACS transfer or PayPal within 45 days if you find the exact same product for cheaper at a selected retailer. Limited to one claim per individual and four per household. Bundle deal and phone contracts specifically excluded. UK18+ only. See the full Terms and Conditions.
+        </p>
+        <p class="">
+            **** Typical value tested under third-party laboratory condition. Typical value is the estimated average value considering the deviation in battery capacity among the battery samples tested under IEC 61960 standard. Actual battery life may vary depending on network environment, usage patterns, and other factors.
+        </p>
+    </div>
+    <table>
+      
+
+        <tr>
+            <td style="padding-bottom: 90px">
+                <p class="fw-bold">Product & Service</p>
+                <p><a href="#">Smartphones</a> </p>
+                <p><a href="#">Watches </a></p>
+                <p> <a href="#">Tablets</a></p>
+                <p> <a href="#">Audio sound</a></p>
+                <p><a href="#">Smart swiches</a></p>
+                <p> <a href="#">Mobile Accessories </a></p>
+                <p> <a href="#">TVs</a></p>
+                <p>   <a href="#">Lifestyle TVs</a></p>
+                <p> <a href="#"> Refrigerator</a></p>
+                <p>  <a href="#"> Laundary</a></p>
+                <p> <a href="#">Air solution</a></p>
+                <p> <a href="#">Cooking Appliances</a></p>
+                <p>  <a href="#">Monitors</a></p>
+                <p> <a href="#">Memory storage</a></p>
+                <p> <a href="#">Memory storage</a></p>
+                <p>  <a href="#">Sound Device</a></p>
+               
+
+            </td>
+            <td style="padding-bottom: 250px;">
+                <p class="fw-bold">Shop</p>
+                <p><a href="#">All offer</a></p>
+                <p> <a href="#">Contract phones</a> </p>
+                <p><a href="#"> Trade in deals</a></p>
+                <p><a href="#">Samsung Upgrade Programme</a></p>
+                <p><a href="#">Samsung people Video Chat </a></p>
+                <p> <a href="#"> Track your Order</a></p>
+                <p> <a href="#"> Delivery & Return</a></p>
+                <p><a href="#"> Online shop FAQs</a></p>
+                <p>   <a href="#"> Privacy (Online shop)</a></p>
+                <p>  <a href="#"> Business Shop</a></p>
+                <p>  <a href="#"> Samsung Student</a></p>
+                <p>  <a href="#">Samsung Experience Store</a></p>
+            </td>
+            <td style="padding-bottom: 410px;">
+                <p class="fw-bold">Support</p>
+                <p>  <a href="#"> Solutions,Manuals & Downloads</a></p>
+                <p> <a href="#"> Book a repair</a></p>
+                <p> <a href="#"> Track my repair</a</p>
+                <p>  <a href="#">Warranty information</a></p>
+                <p>  <a href="#">How to Guides</a></p>
+                <p> <a href="#"> Contact Us </a></p>
+                <p> <a href="#">Product Registration</a></p>
+                <p>   <a href="#">Give Feedback</a></p>
+            </td>
+            <td style="padding-bottom: 410px;">
+                <p class="fw-bold">Account & Community</p>
+                <p> <a href="#">My page </a></p>
+                <p> <a href="#"> My product</a></p>
+                <p> <a href="#">Orders</a></p>
+                <p> <a href="#">Wishlist</a></p>
+                <p> <a href="#">Member</a></p>
+                <p> <a href="#">Vouchers</a></p>
+                <p>   <a href="#"> Commnity</a></p>
+                <p>  <a href="#"> Samsung Reward</a></p>
+
+            </td>
+            <td style=" padding-bottom: 65px; padding-top: 10px;" >
+               <p class="fw-bold"> Sustainability</p>
+               <p> <a href="#">Over view</a></p>
+               <p> <a href="#">Environment</a></p>
+               <p> <a href="#">Corporate Citizenship</a></p>
+               <p><a href="#">Digital Responsibility</a></p>
+               <p> <a href="#">Labour & Human Right</a></p>
+               <p> <a href="#"> Sustainable supply chain</a></p>
+               <p>  <a href="#"> Mordern Slavery Act Statement</a></p>
+               <p> <a href="#"> Gender Pay Gap Reward</a></p>
+               <p></p>
+               <p class="fw-bold"> About Us</p>
+               <p> <a href="#"> Company info</a></p>
+               <p> <a href="#">Business Area</a></p>
+               <p> <a href="#">Brand Identity</a></p>
+               <p>   <a href="#"> Careers</a></p>
+               <p><a href="#">Investor Relations</a></p>
+                <p><a href="#">NewsRoom</a></p>
+                <p><a href="#">Ethics</a></p>
+                <p><a href="#">Samsung Design</a></p>
+            </td> 
+        </tr>
+    </table>
+    
+    <nav class="navbar" style="margin-top: -10px; margin-right: -30px;">
+        <p class="ps-4 mt-3 lap navbar-brand">Copyright© 1995-2022 Samsung. All rights reserved.</p>
+        <ul class="navbar nav ">
+            <li class="nav-item ">
+                <a href="#" class="nav-link"><img width="90%" src="../sqi/link-img.webp" alt=""></a>
+            </li>
+        </ul>
+    </nav>
+    <hr style="border: 1px solid lightgrey; margin-top: -5px;">
+    <div class="d-flex ps-3  pt-1 pb-1" >
+        <div class="d-flex ">
+            <a class="asa  fw-bold" style="width: 138px;" href="#">United Kingdom/English</a >
+            <a class="asa ps-2" style="width: 30px;" href="#">|</a>
+            <a class="asa "style="width: 108px;" href="#">Accessibility Help</a>
+            <a class="asa " style="width: 120px;" href="#">Terms and Conditions</a>
+            <a class="asa " href="#">Privacy</a>
+            <a class="asa " href="#">Cookies</a>
+            <a class="asa " href="#">Legal</a>
+            <a class="asa " href="#">Sitemap</a>
+        </div>
+        <div class="d-flex cope">
+            <p class="asa" style="width: 320px;">STAY IN THE LOOP?</p>
+            <a href="#" class=" asap"> <img width="45%" src="../sqi/flat-face.png" alt=""></a>
+            <a href="#" class="asap "> <img width="53%" src="../sqi/flat-twit.png" alt=""></a>
+            <a href="#" class="asap "> <img width="45%" src="../sqi/inta-flat.png" alt=""></a>
+            <a href="#" class="asap "> <img width="52%" src="../sqi/youtube-flat.png" alt=""></a>
+            <a href="#" class="asap "> <img width="45%" src="../sqi/in-flat.png" alt=""></a>
+
+        </div>
+    </div>
+</body>
+</html>

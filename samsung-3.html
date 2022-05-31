@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <title>samsung3</title>
+    <style>
+        ul {
+            list-style: none;
+        }
+        .k {
+            margin-left: -15px;
+            margin-top: -5px;
+        }
+        .i {
+            margin-top: -5px;
+        }
+        .ms- {
+            margin-left: 60px;
+        }
+        .nav-link {
+            font-size: 12.5px;
+            color: black;
+        }
+        .nav-link:hover {
+            color: white;
+        }
+        .nav {
+            position: relative;
+            top: 5px;
+            left: -15px;
+        }
+        .w-1 {
+            width: 110px;
+        }
+        .w-2 {
+            width: 100px;
+        }
+        .w-3 {
+            width: 135px;
+        }
+        nav {
+            margin-top: -20px;
+            height: 100px;
+        }
+        .dropd:hover .dropc {
+            display: block;
+            z-index: 1;
+            
+        }
+        .dropdd:hover .dropcc {
+            display: block;
+            z-index: 1;
+        }
+        .dropc {
+            position: absolute;
+            left: -155px;
+            line-height: 52px;
+            display: none;
+            width: 1270px;
+            top: 50px;
+            background-color: white;
+            height: 700px;
+        }
+        .dropcc {
+            position: absolute;
+            left: 300px;
+            /* line-height: 52px; */
+            display: none;
+            /* width: 1000px; */
+            top: 88px;
+        }
+        .dropd {
+            position: relative;
+            
+        }
+        .drop-link {
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+        }
+        .l {
+            position: relative;
+            left:-450px;
+            top: -530px;
+        }
+        .b {
+            margin-left: 850px;
+            margin-top: -890px;
+        }
+        .carousel-slide {
+            position: relative;
+            /* top: -30px; */
+        }
+        .p {
+            margin-top: -35px;
+            font-size: 12px;
+     }
+        .tex {
+            font-weight: 600;
+            
+        }
+        .tex:focus {
+            text-decoration: underline;
+            cursor: pointer;
+            outline: 2px dotted black;
+            padding: 3px;
+        }
+        .cls {
+            margin-top: -150px;
+            font-weight: 600;
+        }
+        .as {
+            margin-left: 125px;
+            width: 340px;
+        }
+        .dd {
+            position: relative;
+        }
+        .dc {
+          margin-left: 15px;
+        }
+        .dd:focus .dc{
+            display: block;
+        }
+        .flow {
+            margin-left: 20px;
+            background-color: rgb(244,244,244);
+            border-radius: 10px;
+            width: 300px;
+            height: 290px;
+            padding: 10px;
+        }
+        .flo {
+            margin-left: 20px;
+            background-color: rgb(244,244,244);
+            border-radius: 10px;
+            width: 300px;
+            height: 290px;
+            padding: 10px;
+        }
+        .msl {
+            margin-left: 35px;
+        }
+        .z {
+            font-size: 12px;
+            font-family: SamsungOne, arial, sans-serif;
+            font-weight: 100;
+        }
+        .fw-b {
+            font-weight: 600;
+        }
+        .flo:hover .z {
+            display: none;
+        }
+        .flo:hover .d {
+            display: block;
+        }
+        .flow:hover .z {
+            display: none;
+        }
+        .flow:hover .d {
+            display: block;
+        }
+        .d {
+            display: none; 
+            margin-left: 100px;
+            font-size: 13px;
+        }
+        .dar {
+            font-size: 13px;
+        }
+        .dar:hover {
+            opacity: 0.9;
+        }
+        .d:hover {
+            opacity: 0.9;
+        }
+        .apt {
+            display: none; 
+            font-size: 13px;
+        }
+        .main:hover .as {
+            display: none; 
+        }
+        .main:hover .apt {
+            display: block;
+            
+        }
+        .mop {
+            margin-top: 435px;
+        }
+        .mod {
+            margin-top: 425px;
+        }
+        .man:hover {
+            opacity: 0.8;
+            text-decoration: underline;
+        }
+        ol {
+            list-style: decimal-leading-zero;
+            font-weight: bold;
+            text-align: left;
+        }
+        h5 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+            margin-left: 40px;
+        }
+        .ap {
+            font-weight: 600;
+            margin-left: 40px;
+            font-size: 13px;
+
+        }
+        .form-group {
+            width: 420px;
+        }
+        .v:focus {
+            outline: 2px dotted black;
+        }
+        .y {
+            font-size: 37px;
+        }
+        .x {
+            border: 1px solid lightgrey;
+            font-size: 11px;
+        }
+        .prey{
+            width: 360px;
+        }
+        .core {
+            font-size: 11px;
+            padding: 80px;
+            font-weight: 300;
+
+        }
+        .ol {
+            font-weight: 300;
+            font-size: 11px;
+            list-style: decimal;
+        }
+        td a {
+            color: black;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 15px;
+
+        }
+        table td{
+            border: 0.5px solid rgb(217,217,217);
+            border-collapse: collapse;
+            width: 350px;
+            padding-left: 22px;
+        }
+        table {
+            margin-right: -5px;
+            margin-top: -110px;
+        }
+        .lap {
+            font-size: 11px;
+            font-weight: 300;
+        }
+        .asap {
+            text-decoration: none;
+            color: black;
+            font-size: 11px;
+            font-weight: 300;
+        }
+        .asa {
+            text-decoration: none;
+            color: black;
+            font-size: 11px;
+            font-weight: 300;
+            width: 60px;
+        }
+        .cope {
+            margin-left: 300px;
+        }
+        .card-body {
+            margin-left: -15px;
+            margin-right: -17px;
+            margin-bottom: -17px;
+            margin-top: -17px;
+
+
+        }
+    </style>
+</head>
+<body style="overflow-x: hidden;">
+    <nav class="navbar ms-4 ps-2">
+        <div>
+                <a  href="#" class="navbar-brand "><img width="70%" src="../sqi/sam-icon.png" alt=""></a>
+        </div>
+        <ul class="nav ">
+            <div class="row ">
+                <ul class="col d-flex " style="line-height: 2px;">
+                    <li class="nav-item dropd">
+                        <a href="" class="nav-link btn btn-outline-dark border-0 rounded-pill fw-bold p-2 pt-1 pb-1 ">Mobile</a>
+                        <div class="dropc row pt-5" style="padding-left: 20px;">
+                            <ul class="col">
+                                <li class="drop-item ">
+                                    <a href="#" class=" fs-2 text-dark"><h3>Mobile</h3></a>
+                                </li>
+                                <li class="drop-item dropdd">
+                                    <a href="#" class="drop-link">Featured</a>
+                                    <div class="dropcc d-flex">
+                                        <span>></span>
+                                        <ul>
+                                            <li class="drop-item">
+                                                <a href="#" class="drop-link">
+                                                    <span>Galaxy S22 Ultra <button class="btn btn-primary rounded-pill p-0 ps-1 pe-1" style="font-size: 10px;">New</button></span>
+                                                </a>
+                                            </li>
+                                            <li class="drop-item">
+                                                <a href="#" class="drop-link">
+                                                    <span>Galaxy S22 <div style="border-right: 1.3px solid black; display: inline; margin-right: 3px;"></div> S22+<button class="btn btn-primary rounded-pill p-0 ps-1 pe-1" style="font-size: 10px;">New</button></span>
+                                                </a>
+                                            </li>
+                                            <li class="drop-item">
+                                                <a href="#" class="drop-link">
+                                                    <span>Galaxy Tab S8<div style="border-right: 1.3px solid black; display: inline; margin-right: 3px; margin-left: 2px;"></div>S8+<div style="border-right: 1.3px solid black; display: inline; margin-right: 3px;"></div> S8 Ultra<button class="btn btn-primary rounded-pill p-0 ps-1 pe-1" style="font-size: 10px;">New</button></span>
+                                                </a>
+                                            </li>
+                                            <li class="drop-item">
+                                                <a href="#" class="drop-link">
+                                                    <span>Galaxy A53 5G <button class="btn btn-primary rounded-pill p-0 ps-1 pe-1" style="font-size: 10px;">New</button></span>
+                                                </a>
+                                            </li>
+                                            <li class="drop-item">
+                                                <a href="#" class="drop-link">
+                                                    <span>Galaxy Books Pro 360 <button class="btn btn-primary rounded-pill p-0 ps-1 pe-1" style="font-size: 10px;">New</button></span>
+                                                </a>
+                                            </li>
+                                            <li class="drop-item">
+                                                <a href="#" class="drop-link">
+                                                    <span>Galaxy Bespoke</span>
+                                                </a>
+                                            </li>
+                                            <li class="drop-item">
+                                                <a href="#" class="drop-link">
+                                                    <span>Galaxy Z Flip3 5G</span>
+                                                </a>
+                                            </li>
+                                            <li class="drop-item">
+                                                <a href="#" class="drop-link">
+                                                    <span>Galaxy Z Fold3 5G</span>
+                                                </a>
+                                            </li>
+                                            <li class="drop-item">
+                                                <a href="#" class="drop-link">
+                                                    <span>Galaxy S21 FE <div style="border-right: 1.3px solid black; display: inline; margin-right: 3px;"></div> S22<div style="border-right: 1.3px solid black; display: inline; margin-right: 3px;"></div> S22+ 5G</span>
+                                                </a>
+                                            </li>
+                                            <li class="drop-item">
+                                                <a href="#" class="drop-link">
+                                                    <span>Galaxy Watch4</span>
+                                                </a>
+                                            </li>
+                                            <li class="drop-item">
+                                                <a href="#" class="drop-link">
+                                                    <span>Galaxy Watch4 Classic</span>
+                                                </a>
+                                            </li>
+                                            <li class="drop-item">
+                                                <a href="#" class="drop-link">
+                                                    <span>Galaxy Buds2</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="drop-item">
+                                <a href="#" class="drop-link">Smartphones</a>
+                                </li>
+                                <li class="drop-item">
+                                    <a href="#" class="drop-link">Tablets</a>
+                                </li>
+                                <li class="drop-item">
+                                    <a href="#" class="drop-link">Galaxy Book</a>
+                                </li>
+                                <li class="drop-item">
+                                    <a href="#" class="drop-link">  Watches</a>
+                                </li>
+                                <li class="drop-item">
+                                    <a href="#" class="drop-link">Galaxy Buds</a>
+                                </li>
+                                <li class="drop-item">
+                                    <a href="#" class="drop-link">Accessories</a>
+                                </li>
+                                <li class="drop-item">
+                                    <a href="#" class="drop-link">One UI</a>
+                                </li>
+                                <li class="drop-item">
+                                    <a href="#" class="drop-link">Galaxy Gifts</a>
+                                </li>
+                                <li class="drop-item">
+                                    <a href="#" class="drop-link">Why Galaxy</a>
+                                </li>
+                            </ul>
+                            <div class="col l">
+                                <div class="var" style="border-right: 1px solid lightgrey; height: 65vh;"></div>
+                            </div>
+                            <div class="col b">
+                                <img  class="rounded" src="../sqi/sam-image.webp" alt="">
+                                <p class=" fs-6" >Galaxy S22 Ultra</p>
+                                <a href="#" class="text-dark fw-bold  p">Buy now</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link  btn btn-outline-dark border-0 rounded-pill p-2 pt-1 pb-1  fw-bold m">TV&AV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link w-3 btn btn-outline-dark border-0 rounded-pill  pt-1 pb-1 fw-bold">Home Appliances</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link btn btn-outline-dark border-0 rounded-pill p-2 pt-1 pb-1 fw-bold">Computing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link btn btn-outline-dark border-0 rounded-pill p-2 pt-1 pb-1 fw-bold">Displays</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link w-2 btn btn-outline-dark border-0 rounded-pill p-1 pt-1 pb-1 fw-bold">Smart Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link btn btn-outline-dark border-0 rounded-pill ms-2 p-2 pt-1 pb-1  fw-bold fw-bold">Offer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link btn btn-outline-dark border-0 rounded-pill p-2 pt-1 pb-1 fw-bold">#YouMake</a>
+                    </li>
+                </ul>
+                <ul class="col d-flex ms-">
+                    <li class="nav-item">
+                        <a href="" class="nav-link btn btn-outline-dark border-0 rounded-pill p-2 pt-1 pb-1 fw-bold">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link btn btn-outline-dark border-0 rounded-pill p-2 pt-1 pb-1 fw-bold">Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link w-1 btn btn-outline-dark border-0 rounded-pill p-1 pt-1 pb-1 fw-bold">For Business</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link i "><img width="27px" src="../sqi/search-sam.png" alt=""></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link k"><img width="23px" src="../sqi/basket-sam.png" alt=""></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link k"><img width="23px" src="../sqi/me-sam.png" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </ul>
+    </nav>
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+
+        </div>
+      
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../sqi/caro-1-sam.webp" alt="Los Angeles" class="d-block w-100">
+          </div>
+          <div class="carousel-item  card">
+              <div class="card-body">
+                <video src="../sqi/video-sam.webm" autoplay="autoplay" muted="muted" loop="loop" class="d-block w-100"></video>
+                <div class="card-img-overlay pt-5" style="margin-left: 580px;">
+                    <p style="font-size: 42.6667px; font-weight: 700; font-family: Arial, Helvetica, sans-serif;">Galaxy S22 Ultra</p>
+                    <p style="width: 520px;">Get an instant Ddiscount of up to £450 when you trade in. Plus, enjoy 12 months of Disney+ on us.</p>
+                   <div style="margin-top: 50px;">
+                    <p style="font-size: 12px; border-bottom: 1px solid black; width: 62px; display: inline; padding-top: 80px;">
+                        <a href="galaxy.html" class="text-dark text-decoration-none fw-bold"> Learn more</a>
+                    </p>
+                    <button class="btn btn-dark rounded-pill pt-1 ms-3 dar ps-3 pe-3 ">Buy now</button>
+                   </div>
+
+                </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../sqi/caro-2-sam.webp" alt="Chicago" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="../sqi/caro-3-sam.webp" alt="New York" class="d-block w-100">
+          </div>
+        </div>
+      
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+
+   
+    <section>
+        <p class="text-center fs-2 p-5 fw-bold" style="font-family: SamsungSharpSans, arial, sans-serif;">Latest Deals</p>
+        <div class=" d-flex mb-4">
+            <div class="mx-auto ">
+               <div class="d-inline ">
+                    <a href="#" class="text-decoration-none text-dark  tex">Spring Sales  </a>  
+               </div>
+                <div class="d-inline">
+                    <a href="#" class="text-decoration-none text-dark msl  tex">Mobile</a >
+                </div>
+              <div class="d-inline">
+                <a href="#" class="text-decoration-none text-dark  msl  tex">TV & AV</a>
+              </div>
+               <div class="d-inline">
+                <a href="#" class="text-decoration-none text-dark  msl  tex">Home Appliances</a>
+               </div>
+               <div class="d-inline">
+                <a href="#" class="text-decoration-none text-dark msl  tex"> Laptops & Monitors</a>
+               </div>
+               <div class="d-inline">
+                <a href="#" class="text-decoration-none text-dark  msl  tex">New In</a>
+               </div>
+            </div>
+        </div>
+        <div class="dc d-flex">
+            <div class="text-center main">
+                <img style="border-radius: 20px;" width="600px" src="../sqi/spring-1.webp" alt="">
+                <p class="cls fs-5">Spectacular Spring Savings</p>
+                <p class="small as">Enjoy savings on everything from foldable phones to vacuum cleaners </p>
+                <button class="btn btn-dark rounded-pill  apt">Shop all offers</button>
+                
+            </div>
+           <main class="">
+              <main class="d-flex">
+                    <div class=" text-center pt-4 flo">
+                        <img width="53%" src="../sqi/spring-flower.webp" alt="">
+                        <p class=" fw-b">Save an amazing $100</p>
+                        <p class="z text-secondary">when you buy  Galaxy Z fold3 or Galaxy Z flip3</p>
+                        <button class="btn btn-dark rounded-pill pt-1 d">Buy now</button>
+                    </div>
+                    <div class=" text-center  flow"> 
+                        <img width="53%" src="../sqi/spring-hill.webp" alt="">
+                        <p class=" fw-b">Amazing prices on QLED TVs from $449</p>
+                        <p class="z text-secondary  "> while stocks  last</p>
+                        <button class="btn btn-dark rounded-pill pt-1 d">Buy now</button>
+
+                    </div>
+              </main>
+              <main class="d-flex mt-3">
+                    <div class=" text-center pt-4 flo">
+                        <img width="53%" src="../sqi/spring-cam.webp" alt="">
+                        <p class="fw-b">Save 20% when you buy 3 selected home appliances </p>
+                        <p class="z text-secondary  "> or save 15% when you buy two</p>
+                        <button class="btn btn-dark rounded-pill pt-1 d">Buy now</button>
+
+
+                    </div>
+                    <div class=" text-center pt-5 flow"> 
+                        <img width="53%" src="../sqi/spring-lap.webp" alt="">
+                        <p class="fw-b">Claim free gifts worth $300</p>
+                        <p class="z text-secondary  "> When you buy Galaxy book2 series</p>
+                        <button class="btn btn-dark rounded-pill pt-1 d">Buy now</button>
+
+                    </div>
+              </main>
+           </main>
+        </div>
+    </section>
+    <section>
+        <main class="text-center mt-5 pt-5">
+            <h2 style="font-family: SamsungSharpSans, arial, sans-serif;" class="fw-bold ">Mobile</h2>
+            <div class="mt-3">
+                <div class="mx-auto ">
+                    <div class="d-inline ">
+                         <a href="#" class="text-decoration-none text-dark  tex">Galaxy S22| S22+  </a>  
+                    </div>
+                    <div class="d-inline">
+                        <a href="#" class="text-decoration-none text-dark  msl  tex">Galaxy A53 5G</a>
+                       </div>
+                     <div class="d-inline">
+                         <a href="#" class="text-decoration-none text-dark msl  tex">Galaxy Tab S8 | S8+ | S8 Ultra</a >
+                     </div>
+                   <div class="d-inline">
+                     <a href="#" class="text-decoration-none text-dark  msl  tex">Galaxy Book2 Series</a>
+                   </div>
+                    <div class="d-inline">
+                     <a href="#" class="text-decoration-none text-dark msl  tex"> Galaxy Z Fold3</a>
+                    </div>
+                 </div>
+                 <div class="mt-3">
+                     <img width="660px" src="../sqi/snip-sam.png" alt="">
+                 </div>
+                 <div class="mt-4">
+                     <h2 style="font-family: SamsungSharpSans, arial, sans-serif; font-weight: 700;">Galaxy S22| S22+ </h2>
+                     <p>Enjoy a guaranteed $200  off when you trade in every Android phone in  any condition</p>
+                     <div>
+                         <a style="font-weight: 500;" href="#" class="text-dark small">Learn more</a>
+                        <button class="btn btn-dark rounded-pill pt-1 ps-3 pe-3 ms-3" style="font-size: 13px;">Buy now</button>
+                     </div>
+                 </div>
+            </div>
+        </main>
+    </section>
+    <main>
+        <div class="card mt-4 border-0">
+            <div class="card-body  ">
+                <img width="1280px" style="margin-left: -17px; margin-top: -17px;" src="../sqi/sam-bg-img.webp" alt="">
+                <div class="card-img-overlay text-center mt-4">
+                    <h2 class="text-white">TV & AV</h2>
+                    <div class=" ">
+                        <div class="d-inline ">
+                             <a href="#" class=" text-white fw-bold tex">Neo QLED</a>  
+                        </div>
+                        <div class="d-inline">
+                            <a href="#" class="text-decoration-none text-white fw-bold  msl  tex"> QLED</a>
+                        </div>
+                        <div class="d-inline">
+                             <a href="#" class="text-decoration-none text-white fw-bold msl  tex"> Lifestyle TVs</a >
+                        </div>
+                       <div class="d-inline">
+                         <a href="#" class="text-decoration-none text-white fw-bold  msl  tex"> Crystal UHD</a>
+                       </div>
+                        <div class="d-inline">
+                         <a href="#" class="text-decoration-none text-white fw-bold msl  tex">  Q-series soundbar</a>
+                        </div>
+                     </div>
+                    <div class="mop">
+                        <h1 class="text-white" style="font-family: SamsungSharpSans, arial, sans-serif; font-weight: 700;">The all-new 2022 New QLED TVs </h1>
+                        <p class="text-white">Enjoy entertainment without boundaries,where the only edge you'll notice is the edge of your sea.t</p>
+                        <div>
+                            <a style="font-weight: 500;" href="#" class="text-white small">Learn more</a>
+                            <button class="btn btn-light rounded-pill pt-1 ps-3 pe-3 ms-3" style="font-size: 13px;">Buy now</button>
+                        </div>
+                    </div>
+                        
+                </div>
+            </div>
+        </div>
+        <div class="card border-0 ">
+            <div class="card-body  ">
+                <img width="1280px" style="margin-left: -17px; margin-top: 0px;" src="../sqi/home-sam.webp" alt="">
+                <div class="card-img-overlay text-center ">
+                    <h2 class="text-dark">Home Appliances</h2>
+                    <div class=" ">
+                        <div class="d-inline ">
+                             <a href="#" class=" text-dark fw-bold tex">BESPOKE Jet</a>  
+                        </div>
+                        <div class="d-inline">
+                            <a href="#" class="text-decoration-none text-dark fw-bold  msl  tex"> Bespoke</a>
+                        </div>
+                        <div class="d-inline">
+                             <a href="#" class="text-decoration-none text-dark fw-bold msl  tex"> Samsung Jet Bot</a >
+                        </div>
+                       <div class="d-inline">
+                         <a href="#" class="text-decoration-none text-dark fw-bold  msl  tex"> Air Dresser</a>
+                       </div>
+                     </div>
+                    <div class="mod">
+                        <h1 class="text-dark" style="font-family: SamsungSharpSans, arial, sans-serif; font-weight: 700;">BESPOKE Jet Vacuum Cleaners </h1>
+                        <p class="text-dark">Trap dust once and for all with the new all-in-one Bespoke jet vacuum cleaner and Clean Station </p>
+                        <div>
+                            <a style="font-weight: 500;" href="#" class="text-dark small">Learn more</a>
+                            <button class="btn btn-dark rounded-pill pt-1 ps-3 pe-3 ms-3" style="font-size: 13px;">Buy </button>
+                        </div>
+                    </div>
+                        
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <h2 class="man pt-5 mt-3 pb-4">Explore #DoWhatYouCant</h2>
+            <div class="d-flex">
+                <span>
+                    <img class="ms-4" style="border-radius: 20px;" src="../sqi/sam-watch.jpg" alt="">
+                </span>
+                <span class="ms-5 mt-5 pt-4 w-50">
+                    <div style="border-bottom: 2px solid black;  width: 100%; margin-left: -17px; margin-bottom: 30px;"></div>
+                    <ol>
+                        <li>
+                            <h5 class="mt-4 mb-4">A Fashion Icon Meets a Tech Pioneer</h5>
+                            <a href="#" class="text-dark small pb-4 ap">Learn more</a>
+                            <hr style="border-bottom: 1px solid lightgrey; margin-left: 40px; width: 90%;">
+                            
+                        </li>
+                        
+                        <li class="mt-4 mb-5">
+                            <h5>Unbox & Discover</h5>
+                           
+                            
+                        </li>
+                        <li class="mt-4 mb-5">
+                            <h5>The Art of Upcycling</h5>
+                            
+                            
+                        </li>
+                        <li class="mt-4 mb-5">
+                            <h5>Together for tomorrow at CES 2022
+                            </h5>
+                           
+                            
+                        </li>
+                        <li class="mt-4 mb-5">
+                            <h5>Samsung KX: The Home of Innovation</h5>
+                           
+                            
+                        </li>
+                    </ol>
+                </span>
+            </div>
+        </div>
+    </main>
+    <section >
+       <div class="text-center p-5 mt-5">
+            <span class="fw-bold y">Looking for something else?</span>
+            <main>
+                <form action="" class="" >
+                    <div class="form-group  d-flex border border-secondary rounded-pill p-2 ps-4 mt-3 mx-auto bg-light">
+                        <img class="ms-2" width="20px" src="../sqi/search-sam.png" alt="">
+                        <input type="text" class="form-control w-75 ms-2 rounded-0 v border-0 p-0 bg-light" placeholder="Search keyword">
+                    </div>
+                    <div class="form-group mx-auto mt-3 d-flex">
+                        <button class="form-control rounded-pill btn x text-secondary btn-outline-light w-100">Galaxy S21 ultra 5G</button>
+                        <button class="form-control rounded-pill btn x text-secondary btn-outline-light">Galaxy Note 10</button>
+                        <button class="form-control rounded-pill btn x text-secondary btn-outline-light w-75">Galaxy A51</button>
+                        <button class="form-control rounded-pill btn x text-secondary btn-outline-light w-50 p-1">QLED 8K</button>
+
+                    </div>
+                    <div class="form-group mx-auto mt-2 d-flex prey">
+                        <button class="form-control rounded-pill btn x text-secondary btn-outline-light   w-75">98 inch QLED</button>
+                        <button class="form-control rounded-pill btn x text-secondary btn-outline-light ms-2 w-75">QuickDrive</button>
+                        <button class="form-control rounded-pill btn x text-secondary btn-outline-light ms-2 w-100 ">One Door Refigerator </button>
+                    </div>
+               </div>
+            </main>
+    </section>
+    <main class="core">
+        <p class="ps-3">* Features Galaxy S22+</p>
+        <p class="ps-3">* Image simulated for illustrative purpose. </p>
+        <p class="ps-3">** Color and model availability may vary depending on country or carrier.</p>
+        <p class="ps-3">*** Galaxy A53 5G is rated as IP67. Based on test conditions for submersion in up to 1 meter of fresh water for up to 30 minutes. Safe against low water pressure only.</p>
+        <ol class="ol">
+            <li class="pb-3">Subject to status and credit approval. Finance provided by PayPal Credit. Samsung Electronics (UK) Limited acts as a broker and offers finance from a limited number of providers. PayPal Credit is a trading name of PayPal (Europe) S.à r.l. et Cie, S.C.A., 22-24 Boulevard Royal L-2449, Luxembourg. Please be aware that late or missing repayments may also affect your credit rating, which could make it more difficult or expensive for you to obtain credit in the future. T&Cs apply.</li>
+            <li class="pb-3"> All credit is subject to status and only available to UK residents over 18, with a UK Bank account and valid driver’s license, passport, or identity card. Credit duration is variable, and you could be offered credit at a higher rate than the representative APR set out above based on your personal financial circumstances and what you tell us. For smaller baskets of between £150 and £250 a minimum upfront payment of 20% is required and 12 months fixed monthly payments. For loans above £250, a 10% deposit is required and up to 36 months of fixed monthly payments. By accepting our credit you consent to a credit check being completed which will appear on your credit file.</li>
+            <li class="pb-3"> Delivery and installation available in UK mainland only.</li>
+            <li class="pb-3">Purchase from Samsung.com by 25.04.2022. While stocks last. </li>
+            <li class="pb-3"> Samsung Electronics (UK) Limited. UK, Isle of Man or Channel Islands residents (18+) only or registered companies in the same.  Purchase a Samsung Galaxy Tab S7 FE, Tab S6 Lite or Tab A8 (Promotion Product) from a participating retailer between 02/03/202 – 05/04/2022 and claim £50 Google Play Gift Code by redemption. No cash alternative. Participants must visit <a href="#">www.samsungpromotions.claims/tab-google-offer</a> , upload proof of purchase and provide all other required information (Claim). All Participants must claim within 60 days of purchase.  Claim period closes on 04/06/2022.  Maximum 1 Claim per Promotion Product purchased (maximum 4 Claims per household) and a maximum of 10 Claims per company participant.  See www.samsungpromotions.claims/tab-google-offer for full Promotion terms.  Google Play is a trademark of Google LLC.  </li>
+            <li class="pb-3"> Samsung Electronics (UK) Limited.  UK, Channel Islands or Isle of Man residents aged 18+ or registered companies only. Purchase a selected new (i.e. not second hand) Samsung 2022 Neo QLED, The Frame or The Serif TV between 16.03.22 – 24.05.22 from a participating retailer (either in-store or online). To claim, <a href="#">visit https://2021.samsungpromotions.claims/2022tvcashback</a> , complete the claim form and submit it together with a scanned proof of purchase. Claims may only be submitted between 30 and 60 days from the date of purchase. Maximum 1 claim per purchase, 2 per household and 10 per registered business during the Promotion Period. To claim, and for full T&Cs,  <a href="#">visit https://2021.samsungpromotions.claims/2022tvcashback</a></li>
+            <li class="pb-3">Samsung Electronics (UK) Limited. Purchase a Galaxy S21 FE device before 11/06/22 (23:59 BST). The Disney+ 3-month subscription offer is valid between 11/01/22 and 11/06/22 (23:59 BST). 18+ UK residents only. Participants must enter all information into their Samsung account to receive a code. The code must be redeemed by 11/06/23 (23:59 BST). Subscription auto renews after 3-months at £7.99 p/month unless cancelled prior to the end of the 3 month subscription. Cancel anytime. See www.samsung.com/uk/boost/disneyplus for details and full terms and conditions and www.disneyplus.com for the Disney+ Subscriber Agreement</li>
+            <li class="pb-3">Purchase from  <a href="#">Samsung.com</a>  by 25.04.22. Discount applied automatically at checkout when two or more qualifying products in basket. While stocks last.</li>
+            <li class="pb-3"> Promoter: Samsung Electronics (UK) Limited. UK, Isle of Man, Channel Islands or Republic of Ireland residents (18+ only) and registered companies. Pre order/Purchase a new Samsung Galaxy Book 2 Pro 360, Book 2 Pro or Book 2 360 between 18/03/2022 -  19/04/2022 from a participating retailer and claim Samsung Galaxy Buds Pro and Multiport adapter. Claims must be made at www.samsungpromotions.claims/spring-laptop-offers within 60 days of purchase or receipt. Maximum 1 claim per purchase (max 4 per household) and 250 claims per company participant. See <a href="#">www.samsungpromotions.claims/spring-laptop-offers for full T&Cs.</a></li>
+            <li class="pb-3"> Purchase from Samsung Shop Online by 04/04/22. Discount applied at checkout when qualifying products are added to basket. While stocks last. T&Cs apply</li>
+            <li class="pb-3" > Purchase from Samsung.com by 14.04.22. Apply discount code at checkout, not in conjunction with any other offer. While stocks last.</li>
+            <li class="pb-3"> Purchase between 06.04.22 – 24.05.22 from a participating retailer. Claims must be submitted between 30 – 60 days of purchase. To claim, and for full terms and conditions, see <a href="#"> https://samsungpromotions.claims/freestyleA52.</a> </li>
+            <li class="pb-3">Purchase from Samsung Shop Online before the 05/04/22. Terrace Soundbar is automatically added when qualifying product is added to basket. While stock lasts. T&Cs apply.</li>
+            <li class="pb-3">Purchase from Samsung Shop Online by 04.04.22. Discount applied automatically at checkout when qualifying products in basket. While stocks last.</li>
+            <li class="pb-3">Purchase from Samsung Shop Online by 31.12.22. Discount applied automatically at checkout when two or more qualifying products in basket. While stocks last. T&Cs apply.</li>
+            <li class="pb-3">Purchase from <a href="#">Samsung.com</a> by 14.04.22. Apply discount code at checkout, not in conjunction with any other offer. While stocks last.</li>
+            <li class="pb-3">Purchase from Samsung Shop Online by 04.04.22. Apply discount code at checkout, not in conjunction with any other offer.</li>
+            <li class="pb-3">Promoter: Samsung Electronics (UK) Limited. UK, Isle of Man, Channel Islands or Republic of Ireland residents (18+ only) and registered companies. Purchase a new Samsung Galaxy Book Pro 360 5G between 18/03/2022 - 04/2022 from a participating retailer and claim Samsung Galaxy Buds Pro and Multiport adapter. Claims must be made at <a href="#">www.samsungpromotions.claims/spring-laptop-offers</a> within 60 days of purchase. Maximum 1 claim per purchase (max 4 per household) and 250 claims per company participant. See  <a href="#">www.samsungpromotions.claims/spring-laptop-offers</a>for full T&Cs.  </li>
+            <li class="pb-3">Purchase from Samsung.com by 19/04/22. Savings based on regular Samsung.com price. While stocks last. T&Cs apply.</li>
+            <li class="pb-3">Purchase from Samsung.com by 19.04.22. Discount automatically applied at checkout. While stocks last.</li>
+            <li class="pb-3">Purchase from Samsung.com by 04/07/22. Savings based on regular Samsung.com price. Discount applied automatically when qualifying products are added to basket. While stocks last. T&Cs apply.</li>
+            <li class="pb-3">Purchase from  <a href="#">Samsung.com</a> by 04/05/22. £450 based on Galaxy S21+ 256GB. Values can vary by model and condition of trade-in device. Purchased device will be blocked if you don't send us your trade-in device. <a href="#">T&Cs apply</a> . </li>
+            <li class="pb-3">. ©2022 Disney and its related entities. Promoter: Samsung Electronics (UK) Limited. Purchase a new Samsung Galaxy S22, S22+ or S22 Ultra before 22/04/22 (23:59 BST) and be eligible for a 12 month Disney+ subscription. The Disney+ 12-month subscription offer is valid between 09/02/22 and 22/04/22 (23:59 BST). 18+ UK residents only. Participants must enter all information into their Samsung account to receive a code. The code must be redeemed by 11/06/23 (23:59 BST) and can only be used once. Subscription auto renews after 12 months unless cancelled prior to the end of the 12 month subscription (currently £7.99p/month). Cancel anytime. See <a href="#">www.samsung.com/uk/boost/disneyplus</a> for details and full terms and conditions and www.disneyplus.com for the Disney+ Subscriber Agreement.</li>
+            <li class="pb-3"> Promoter: Samsung Electronics (UK) Limited. UK, Isle of Man, Channel Islands or Republic of Ireland residents (18+ only) and registered companies. Purchase a new Samsung Galaxy A52s 5G or A53 5G  between 17/03/2022 – 26/04/2022 from a participating retailer. Claims must be made at www.samsungpromotions.claims/galaxy-a-buds within 30 days of purchase. Maximum 1 claim per purchase (max 4 per household) and 250 claims per company participant. See www.samsungpromotions.claims/galaxy-a-buds for full T&Cs</li>
+            <li class="pb-3"> Purchase from  <a href="#">Samsung.com</a> by 29.04.22. £430 value based on Galaxy S7+ 5G. Values vary by model and condition. Purchased device will be blocked if you don’t send us your trade-in device. T&Cs apply</li>
+            <li class="pb-3">Purchase from Samsung.com by 19.04.22. £160 saving based on purchase of S21 FE 256GB 5G and Buds2 together. Discount automatically applied at checkout. While stocks last.</li>
+            <li class="pb-3">Purchase from <a href="#">Samsung.com</a> by 25.04.22. Apply discount code at checkout and choose recycling option, not in conjunction with any other offer. By using discount code you agree to trade in old appliance.</li>
+            <li class="pb-3">Pre-registration to Samsung Rewards required. Customers must be logged into their Samsung Account during purchase check out. Purchase between 28.03.22 and 30.04.22. Rewards points will be based on the final cost paid at check out (after all discounts) minus shipping costs. For more details of Samsung Rewards and terms and conditions, see https://www.samsung.com/uk/rewards/</li>
+        </ol>
+    </main>
+    <table>
+      
+
+        <tr>
+            <td style="position: relative; top: -10px;">
+                <p class="fw-bold">Product & Service</p>
+                <p><a href="#">Smartphones</a> </p>
+                <p><a href="#">Watches </a></p>
+                <p> <a href="#">Tablets</a></p>
+                <p> <a href="#">Audio sound</a></p>
+                <p><a href="#">Smart swiches</a></p>
+                <p> <a href="#">Mobile Accessories </a></p>
+                <p> <a href="#">TVs</a></p>
+                <p>   <a href="#">Lifestyle TVs</a></p>
+                <p> <a href="#"> Refrigerator</a></p>
+                <p>  <a href="#"> Laundary</a></p>
+                <p> <a href="#">Air solution</a></p>
+                <p> <a href="#">Cooking Appliances</a></p>
+                <p>  <a href="#">Monitors</a></p>
+                <p> <a href="#">Memory storage</a></p>
+                <p> <a href="#">Memory storage</a></p>
+                <p>  <a href="#">Sound Device</a></p>
+               
+
+            </td>
+            <td style="position: relative; top: -89px;">
+                <p class="fw-bold">Shop</p>
+                <p><a href="#">All offer</a></p>
+                <p> <a href="#">Contract phones</a> </p>
+                <p><a href="#"> Trade in deals</a></p>
+                <p><a href="#">Samsung Upgrade Programme</a></p>
+                <p><a href="#">Samsung people Video Chat </a></p>
+                <p> <a href="#"> Track your Order</a></p>
+                <p> <a href="#"> Delivery & Return</a></p>
+                <p><a href="#"> Online shop FAQs</a></p>
+                <p>   <a href="#"> Privacy (Online shop)</a></p>
+                <p>  <a href="#"> Business Shop</a></p>
+                <p>  <a href="#"> Samsung Student</a></p>
+                <p>  <a href="#">Samsung Experience Store</a></p>
+            </td>
+            <td style="position: relative; top: -169px;">
+                <p class="fw-bold">Support</p>
+                <p>  <a href="#"> Solutions,Manuals & Downloads</a></p>
+                <p> <a href="#"> Book a repair</a></p>
+                <p> <a href="#"> Track my repair</a</p>
+                <p>  <a href="#">Warranty information</a></p>
+                <p>  <a href="#">How to Guides</a></p>
+                <p> <a href="#"> Contact Us </a></p>
+                <p> <a href="#">Product Registration</a></p>
+                <p>   <a href="#">Give Feedback</a></p>
+            </td>
+            <td style="position: relative; top: -169px;">
+                <p class="fw-bold">Account & Community</p>
+                <p> <a href="#">My page </a></p>
+                <p> <a href="#"> My product</a></p>
+                <p> <a href="#">Orders</a></p>
+                <p> <a href="#">Wishlist</a></p>
+                <p> <a href="#">Member</a></p>
+                <p> <a href="#">Vouchers</a></p>
+                <p>   <a href="#"> Commnity</a></p>
+                <p>  <a href="#"> Samsung Reward</a></p>
+
+            </td>
+            <td >
+               <p  style="position: relative; top: 10px;" class="fw-bold"> Sustainability</p>
+               <p> <a href="#">Over view</a></p>
+               <p> <a href="#">Environment</a></p>
+               <p> <a href="#">Corporate Citizenship</a></p>
+               <p><a href="#">Digital Responsibility</a></p>
+               <p> <a href="#">Labour & Human Right</a></p>
+               <p> <a href="#"> Sustainable supply chain</a></p>
+               <p>  <a href="#"> Mordern Slavery Act Statement</a></p>
+               <p> <a href="#"> Gender Pay Gap Reward</a></p>
+               <p></p>
+               <p class="fw-bold"> About Us</p>
+               <p> <a href="#"> Company info</a></p>
+               <p> <a href="#">Business Area</a></p>
+               <p> <a href="#">Brand Identity</a></p>
+               <p>   <a href="#"> Careers</a></p>
+               <p><a href="#">Investor Relations</a></p>
+                <p><a href="#">NewsRoom</a></p>
+                <p><a href="#">Ethics</a></p>
+                <p><a href="#">Samsung Design</a></p>
+            </td> 
+        </tr>
+    </table>
+
+        <p class="p-4 lap">Copyright© 1995-2022 Samsung. All rights reserved.</p>
+        <hr style="border: 1px solid lightgrey;">
+        <div class="d-flex ps-3 " >
+            <div class="d-flex ">
+                <a class="asa fw-bold" style="width: 138px;" href="#">United Kingdom/English</a >
+                <a class="asa " style="width: 30px;" href="#">|</a>
+                <a class="asa "style="width: 108px;" href="#">Accessibility Help</a>
+                <a class="asa " style="width: 120px;" href="#">Terms and Conditions</a>
+                <a class="asa " href="#">Privacy</a>
+                <a class="asa " href="#">Cookies</a>
+                <a class="asa " href="#">Legal</a>
+                <a class="asa " href="#">Sitemap</a>
+            </div>
+            <div class="d-flex cope">
+                <p class="asa" style="width: 320px;">STAY IN THE LOOP?</p>
+                <a href="#" class=" asap"> <img width="50%" src="../sqi/flat-face.png" alt=""></a>
+                <a href="#" class="asap "> <img width="58%" src="../sqi/flat-twit.png" alt=""></a>
+                <a href="#" class="asap "> <img width="50%" src="../sqi/inta-flat.png" alt=""></a>
+                <a href="#" class="asap "> <img width="52%" src="../sqi/youtube-flat.png" alt=""></a>
+                <a href="#" class="asap "> <img width="50%" src="../sqi/in-flat.png" alt=""></a>
+
+            </div>
+        </div>
+        <p><img src="../sqi/sam-cookies.png" alt=""></p>
+</body>
+</html?>
